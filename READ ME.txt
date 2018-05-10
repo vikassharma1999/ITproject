@@ -5,7 +5,7 @@ In this we can calculate npr,ncr,binomial expansion,value of binomial expansion,
 
 
 1. Algorithm Used:
-Recursion,Backtracking,BinaryExponentiation.
+Recursion,BinaryExponentiation.
 
 
 2.Functions used:
