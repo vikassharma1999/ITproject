@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vikas</title>
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700i" rel="stylesheet">
+</head>
+<style type="text/css">
+	#id1{
+		text-align: center;
+		color: white;
+		font-size: 20px;
+		background-color: black;
+		padding-bottom: 50px;
+	}
+	#id2{
+		background-image: url(i14.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 100%;
+	}
+</style>
+<script type="text/javascript">
+	function fact(num)
+		{
+			var f=1;
+			var i;
+			for(i=1;i<=num;i++)
+			{
+				f=f*i;
+
+			}
+			return f;
+		}
+	
+	function ex(n)
+	{
+		//var a=parseInt('x');
+		var n=document.getElementById('v').value;
+		var r;
+		if(n==""){
+				alert("value must be filled out\n try again");
+				return;}
+		else if(n<0)
+		{
+			alert("power should be positive\n try again");
+		}
+		var sum=0;
+		
+		for(r=0;r<=n;r++)
+			{sum=sum.toString()+"+"+((fact(n)/(fact(r)*fact(n-r)))+"*"+'x'+'^'+(n-r).toString()+'y'+'^'+r.toString());
+
+		}
+		alert(sum);
+		//document.write(sum);
+     /* var display=document.getElementById('ans');
+      display.innerHTML=sum;*/
+	}
+</script>
+<body bgcolor="	#8A2BE2">
+	<div id="id1">
+		<h1 style="font-family: 'Playfair Display', serif;">Binomial theorem</h1>
+		<p style="font-size: 20px;">The binomial theorem (or binomial expansion) is a result of expanding the powers of binomials or sums of two terms. The coefficients of the terms in the expansion are the binomial coefficients . The theorem and its generalizations can be used to prove results and solve problems in combinatorics, algebra, calculus, and many other areas of mathematics.</p>
+	
+	<h2>Binomial Expension</h2>
+	<img src="i14.png"></div>
+	<br><br>
+<form style="text-align: center; background-color: aqua;padding: 100px;">
+	<input type="text" name="dd" id="v" placeholder="Enter Power">
+	<input type="submit" onclick="ex()">
+	</form>
+<!--	<p id="ans">your ans:</p>-->
+	<center><a href="IT Project.html" style="color: black;" ><b>Preious page</b></a></center>
+	
+
+</body>
+</html>

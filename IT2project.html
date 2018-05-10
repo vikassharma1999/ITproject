@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    
+       
+    <script type="text/javascript">
+        var word=prompt("enter a string");
+      
+       
+        function permute (word) {
+           
+    if (word.length < 2) {
+    return [word];
+    } else {
+        var permutations = [];
+        for (var i = 0; i < word.length; i++) {
+            var letter = word[i];
+             if (word.indexOf(letter) != i)
+            continue;
+
+            var shorterWord = word.substr(0, i) + word.substr(i + 1, word.length - 1);
+            var shortwordArray = permute(shorterWord);
+            for (var j = 0; j < shortwordArray.length; j++) {
+                permutations.push(letter + shortwordArray[j]);
+            }
+        }
+         
+       return permutations;
+    }
+    
+
+
+}
+alert(permute(word));
+
+
+    </script>
+</head>
+<body>
+   
+ 
+</div>
+
+</body>
+</html>

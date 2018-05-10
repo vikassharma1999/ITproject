@@ -1,0 +1,51 @@
+This project is based on Topic-COUNTING(A Wide field of Discrete Mathematics).
+
+In this we can calculate npr,ncr,binomial expansion,value of binomial expansion,arrangements of strings.
+
+
+
+1. Algorithm Used:
+Recursion,Backtracking,BinaryExponentiation.
+
+
+2.Functions used:
+
+*fact(n):-  It calculates the Factorial of n.
+
+*npr(num1,num2):-It calculates npr,where n=num1,r=num2.
+
+* ncr(num1,num2):- It calculates ncr,where n=num1,r=num2.
+
+*ex():- This function expands (a+b)^n and calculate the value.
+
+*exponent(a1,b1,n1):- This function calculate (a1+b1)^n
+
+*permute(word):-It will take the word and it will find all the arrangements of the word.
+
+
+
+
+
+3.Name of Files where the functions are written:
+
+*fact(n):- PNC.html
+
+*npr(num1,num2):-PNC.html
+
+*ncr(num1,num2):-PNC.html
+
+*permute(word):-IT2project.html
+
+*ex():-bio.html
+
+*exponent():- bio2.html
+
+
+4.Issues:
+1. It can't handle the npr and ncr of num; num>170.
+
+CREATED By:
+Dev Kumar Gorai:-201752015
+Vikas Sharma:-201752041
+Bhavesh Patel:-201752013
+

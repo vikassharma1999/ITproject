@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+	 form{
+
+            text-align: center;
+            margin: 300px auto;
+        }
+        input[type="text"]
+        {
+            padding: auto;
+            width: 200px;
+            margin: auto;        }
+        input[type="submit"]{
+         background-color: red;
+         padding: auto;
+         margin: auto;
+        }
+        input[type="reset"]{
+            background-color: green;
+            padding: auto;
+            margin: auto;
+        }
+         #id1{
+         	color: white;
+        background-color: black;
+        border: dotted 15px  red;
+        border-radius: 25px;
+    }
+    #Display
+    {
+    	text-align: center;
+    	font-size: 50px;
+
+
+    }
+    </style>
+
+</head>
+<body>
+	<script type="text/javascript">
+		function exponent(a1,b1,n1)
+		{
+			var x=parseInt(a1)+parseInt(b1);
+            n1=parseInt(n1);
+
+			var result=1;
+			while(n1>0)
+			{
+				if(n1%2==1)
+					{result=result*x;}
+				x=x*x;
+				n1=Math.floor(n1/2);
+			}
+			return result;
+		}
+
+		function expand(){
+         var a1=document.getElementById("a").value;
+        var b1=document.getElementById("b").value;
+        var n1=document.getElementById("n").value;
+        var result=exponent(a1,b1,n1);
+        var display=document.getElementById("Display");
+        display.innerHTML= "Your Answer Is: "+result;
+       return false;
+		}
+	</script>
+	
+	<div id="id1">
+		<h1 style="text-align: center; color: white; padding-top: 100px;">To calculate (a+b)^n :</h1>
+<form onsubmit="return expand();" target="_self">
+	<input type="text" name="a1"  id="a" placeholder="Enter a" required>
+	<input type="text" name="b1" id="b" placeholder="Enter b" required>
+	<input type="text" name="c1" id="n" placeholder="n should be positive" required>
+	<br><br>
+	<input type="submit">
+	<input type="reset" name="">
+	<p id="Display"></p>
+</form>
+<h1 style="text-align: center;"><a href="IT Project.html">Go to Home Page </a></h1>
+
+</div>
+</body>
+</html>
